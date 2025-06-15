@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <title>Meu Primeiro HTML na DIO</title>
+</head>
+
+<body>
+    <h1 id="incio"><strong>Meu Primeiro HTML</strong></h1>
+    <h2>O fantástico mundo da programação!</h2>
+    <ul>
+    <li><a href="#itens">Itens Selecionados</a></li>
+    <li><a href="#batalha">A Batalha</a></li>
+    <li><a href="#guilda">Entre pra Guilda</a></li>
+
+    </ul>
+
+    <h2 id="itens">Itens Selecionados:</h2>
+    <small><a href="#incio">(Voltar)</a></small>
+    <p>Para essa batalha, foram selecionados itens essenciais para enfrentar os desafios propostos, são eles:</p>
+    <ol>
+    <li>HTML</li> 
+    <li>CSS</li> 
+    <li>JavaScript</li> 
+    </ol>
+
+    <h2 id="batalha">A Batalha</h2>
+    <small><a href="#incio">(Voltar)</a></small>
+    <p>Nessa batalha, aprendi a utilizar os conceitos básicos do HTML, como o uso e a aplicação de tags, tanto para textos como para links.</p>
+    <p>Também aprendi a melhorar a experiência de navegação do usuário.</p>
+
+    <h2 id="guilda">Entre para a Guilda!</h2>
+    <small><a href="#incio">(Voltar)</a></small>
+    <p>Para fazer parte da Guilda que melhor prepara os aventureiros da programção, clique no link abaixo.</p>
+    <a href="http://dio.me" target="_blank">Clique Aqui</a>
+
+</body>
+</html>
