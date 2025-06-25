@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.logo img {
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.bar {
+  height: 4px;
+  background-color: #bdc3c7;
+  margin-top: 1rem;
+}
+
+.content {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "sidebar main anchors";
+  grid-template-columns: minmax(0, 15rem) 1fr minmax(0, 15rem);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding-right: 1rem;
+  border-right: 1px solid #ccc;
+}
+
+.main {
+  grid-area: main;
+}
+
+.anchors {
+  grid-area: anchors;
+  padding-left: 1rem;
+  border-left: 1px solid #ccc;
+}
+
+.sidebar ul,
+.anchors ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li,
+.anchors li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a,
+.anchors a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.sidebar a:hover,
+.anchors a:hover {
+  text-decoration: underline;
+}
+
+article h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+.footer {
+  background-color: #ecf0f1;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+figure {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-areas:
+      "sidebar"
+      "main"
+      "anchors";
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar,
+  .anchors {
+    border: none;
+    padding: 0;
+  }
+
+  .sidebar {
+    margin-bottom: 2rem;
+  }
+}
